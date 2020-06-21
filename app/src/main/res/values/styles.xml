@@ -1,0 +1,54 @@
+<resources>
+
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#FF286A</item>
+        <item name="colorPrimaryDark">#131627</item>
+        <item name="colorAccent">#FF286A</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:windowBackground">#656087</item>
+    </style>
+
+    <!-- Style for question TextView -->
+    <style name="QuestionTextStyle" >
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <!-- Alert dialog theme -->
+    <style name="AlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorPrimary">#FF286A</item>
+        <item name="colorPrimaryDark">#131627</item>
+        <item name="colorAccent">#FF286A</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:windowBackground">#656087</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+    </style>
+
+    <!-- Radio button theme -->
+    <style name="RadioButtonTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorPrimary">#FF286A</item>
+        <item name="colorPrimaryDark">#131627</item>
+        <item name="colorAccent">#FF286A</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:buttonTint">#FFFFFF</item>
+        <item name="android:windowBackground">#656087</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+    </style>
+
+    <!-- Checkbox theme -->
+    <style name="CheckboxTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorPrimary">#FF286A</item>
+        <item name="colorPrimaryDark">#131627</item>
+        <item name="colorAccent">#FF286A</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:buttonTint">#FFFFFF</item>
+        <item name="android:windowBackground">#656087</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+    </style>
+</resources>

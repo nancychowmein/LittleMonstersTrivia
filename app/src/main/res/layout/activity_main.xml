@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/lady_gaga_image"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/ladygaga"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"/>
+
+        <TextView
+            android:id="@+id/name_header"
+            style="@style/QuestionTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="What's your name, Little Monster?" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:backgroundTint="#FF286A"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="16dp"
+            android:inputType="textCapWords" />
+
+        <TextView
+            android:id="@+id/kpop"
+            style="@style/QuestionTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="5dp"
+            android:text="Which K-pop group collaborated with Lady Gaga on Chromatica?" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/blackpink_radiobutton"
+                style="@style/RadioButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text= "BLACKPINK"
+                app:fontFamily="@font/montserrat"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="24dp"
+                android:onClick="onRadioButtonSelected"/>
+            <RadioButton
+                android:id="@+id/fx_radiobutton"
+                style="@style/RadioButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text= "f(x)"
+                app:fontFamily="@font/montserrat"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="24dp"
+                android:onClick="onRadioButtonSelected"/>
+            <RadioButton
+                android:id="@+id/bts_radiobutton"
+                style="@style/RadioButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text= "BTS"
+                app:fontFamily="@font/montserrat"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="24dp"
+                android:layout_marginBottom="25dp"
+                android:onClick="onRadioButtonSelected"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/superbowl"
+            style="@style/QuestionTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="5dp"
+            android:text="Lady Gaga was the headline performer at which Super Bowl?"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/sb50_radiobutton"
+                style="@style/RadioButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text= "50"
+                app:fontFamily="@font/montserrat"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="24dp"/>
+            <RadioButton
+                android:id="@+id/sbLI_radiobutton"
+                style="@style/RadioButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text= "LI"
+                android:textSize="16sp"
+                app:fontFamily="@font/montserrat"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="24dp"/>
+            <RadioButton
+                android:id="@+id/sbLII_radiobutton"
+                style="@style/RadioButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text= "LII"
+                app:fontFamily="@font/montserrat"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="25dp"
+                android:paddingLeft="24dp"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/nonprofit"
+            style="@style/QuestionTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="5dp"
+            android:text="In what year did Lady Gaga start her non-profit, the Born This Way Foundation?"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/year2011_radiobutton"
+                style="@style/RadioButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text= "2011"
+                app:fontFamily="@font/montserrat"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="24dp"/>
+            <RadioButton
+                android:id="@+id/year2012_radiobutton"
+                style="@style/RadioButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text= "2012"
+                android:textSize="16sp"
+                app:fontFamily="@font/montserrat"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="24dp"/>
+            <RadioButton
+                android:id="@+id/year2014_radiobutton"
+                style="@style/RadioButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text= "2014"
+                app:fontFamily="@font/montserrat"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="25dp"
+                android:paddingLeft="24dp"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/awards"
+            style="@style/QuestionTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="5dp"
+            android:text="Which of the following awards has Lady Gaga won? Select all that apply." />
+
+        <CheckBox
+            android:id="@+id/grammy_checkbox"
+            style="@style/CheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "Grammy Award"
+            app:fontFamily="@font/montserrat"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="24dp"
+            android:onClick="onCheckboxClicked"/>
+
+        <CheckBox
+            android:id="@+id/academy_checkbox"
+            style="@style/CheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "Academy Award"
+            app:fontFamily="@font/montserrat"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="24dp"
+            android:onClick="onCheckboxClicked"/>
+
+        <CheckBox
+            android:id="@+id/bafta_checkbox"
+            style="@style/CheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "BAFTA Award"
+            app:fontFamily="@font/montserrat"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="24dp"
+            android:onClick="onCheckboxClicked"/>
+
+        <CheckBox
+            android:id="@+id/emmy_checkbox"
+            style="@style/CheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "Emmy Award"
+            app:fontFamily="@font/montserrat"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="24dp"
+            android:layout_marginBottom="25dp"
+            android:onClick="onCheckboxClicked"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            app:fontFamily="@font/montserrat"
+            android:textColor="@android:color/white"
+            android:onClick="submitQuiz"
+            android:background="#FF286A"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="25dp"/>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>
